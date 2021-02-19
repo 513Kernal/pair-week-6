@@ -91,6 +91,7 @@ public class JDBCEmployeeDAOTests {
         for (Employee employeeSearched : listToCheck) {
             if (employee_objects_are_same(employee, employeeSearched)) {
                 result = true;
+                break;
             }
         }
         return result;
