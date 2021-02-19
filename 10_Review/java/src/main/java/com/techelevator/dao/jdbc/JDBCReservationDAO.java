@@ -24,6 +24,10 @@ public class JDBCReservationDAO implements ReservationDAO {
         return -1;
     }
 
+    public List<Reservation> getUpcomingReservations(){
+
+    }
+
     private Reservation mapRowToReservation(SqlRowSet results) {
         Reservation r = new Reservation();
         r.setReservationId(results.getInt("reservation_id"));

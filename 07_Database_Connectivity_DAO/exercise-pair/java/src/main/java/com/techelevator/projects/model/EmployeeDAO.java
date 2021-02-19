@@ -39,9 +39,9 @@ public interface EmployeeDAO {
 
 	/**
 	 * Get all of the employees that are on the project with the given {@code id}.
-	 * 
-	 * @param id the project id to get the employees from
-	 * @return all the employees assigned to that project as Employee objects in a List
+	 *
+	 * 	 * @param id the project id to get the employees from
+	 * 	 * @return all the employees assigned to that project as Employee objects in a List
 	 */
 	public List<Employee> getEmployeesByProjectId(Long projectId);
 
