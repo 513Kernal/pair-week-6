@@ -10,7 +10,6 @@ import java.util.List;
 public class JDBCDAOdepartmentTest {
 
     private static final String TEST_DEPARTMENT_1 = "departmentTest1";
-    private static final String TEST_DEPARTMENT_2 = "departmentTest2";
     private static SingleConnectionDataSource dataSource;
     private JDBCDepartmentDAO dao;
     @BeforeClass

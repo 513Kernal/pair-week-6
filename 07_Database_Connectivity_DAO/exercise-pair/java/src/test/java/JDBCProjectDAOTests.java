@@ -178,8 +178,4 @@ public class JDBCProjectDAOTests {
         Assert.assertEquals(1, employeesOnProjectModified.size());
     }
 
-
-
-
-
 }

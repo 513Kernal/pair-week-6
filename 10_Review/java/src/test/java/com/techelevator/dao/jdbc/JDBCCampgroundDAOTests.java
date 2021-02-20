@@ -23,6 +23,11 @@ public class JDBCCampgroundDAOTests extends BaseDAOTests {
         List<Campground> campgrounds = dao.getCampgroundsByParkId(99);
 
         assertEquals(2,campgrounds.size());
+
+        //make sure it ONLY returns campgrounds for relevant search id
+
+        List<Campground> campgroundsModified = dao.getCampgroundsByParkId(1);
+        assertEquals(0, campgroundsModified.size());
     }
 
 }

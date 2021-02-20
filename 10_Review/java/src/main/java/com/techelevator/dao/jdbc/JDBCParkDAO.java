@@ -24,8 +24,6 @@ public class JDBCParkDAO implements ParkDAO {
                "FROM park\n" +
                "ORDER BY park.location ASC;";
        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-
-
        while (results.next()){
            Park park = mapRowToPark(results);
            allParks.add(park);
